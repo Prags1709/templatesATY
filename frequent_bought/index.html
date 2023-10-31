@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popup 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="attryb-fbt-section-wrapper" >
+      <div class="attryb-fbt-section" >
+        <div class="fbt-left-wrapper">
+          <h1 class="fbt-section-heading">Frequently Bought Together</h1>
+          <div class="product-content-container">
+            <a href="${{product_URL}}" class="fbt-product-card">
+              <img src="${{image}}" alt="">
+              <div class="fbt-product-info">
+                <p class="fbt-product-name">${{title}}</p>
+                <div class="fbt-product-price-container">
+                  <span class="fbt-product-price">$ ${{final_price}}</span>
+                  <!-- <span class="fbt-strike-through">${{compare_at_price}}</span>
+                  <span class="fbt-price-discount">${{discount}}% off</span> -->
+                </div>
+              </div>
+              <div class="fbt-card-checkbox-wrapper"><input type="checkbox" class="fbt-checkbox" id="${{id}}" checked></div>
+            </a>
+            <div class="fbt-card-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"> <path d="M10 4.16666V15.8333" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M4.16699 10H15.8337" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg></div>
+          </div>
+          </div>
+          <div class="fbt-right-wrapper">
+            <p class="fbt-total-price">Total Price: <span class="total-price-main">$00.00</span> 
+              <!-- <span class="total-price-strike-through">$00.00</span> -->
+            </p>
+            <button class="fbt-add-to-cart-btn">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

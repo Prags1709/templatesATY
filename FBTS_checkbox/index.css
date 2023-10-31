@@ -1,0 +1,251 @@
+#attryb-fbt-03-section-wrap {
+    /* border: 1px solid red; */
+    width: 1024px;
+    margin: auto;
+    padding: 40px;
+}
+
+.attryb-fbt-03-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.attryb-fbt-03-container>.attryb-fbt-03-head-title>p {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #1D2939;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.attryb-fbt-03-card-wrap {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.attryb-fbt-03-card-wrap>.attryb-fbt-03-card-holder {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attryb-fbt-03-card-wrap>.attryb-fbt-03-card-holder>.attryb-fbt-03-card-box {
+    width: 212px;
+    height: 284px;
+    border: 1px solid rgba(237, 238, 238, 0.84);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.attryb-fbt-03-card-box>.attryb-fbt-03-card-avatar-container>img {
+    width: 100%;
+}
+
+.attryb-fbt-03-card-product-details {
+    padding: 12px 8px;
+}
+
+.attryb-fbt-03-card-product-details>.attryb-fbt-03-card-product-title {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.attryb-fbt-03-card-product-details>.attryb-fbt-03-card-product-price {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin: 3px 0 0 0;
+    letter-spacing: 0.0223rem;
+}
+
+.attryb-fbt-03-card-wrap>.attryb-fbt-03-button {
+    text-align: center;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+
+}
+
+.attryb-fbt-03-card-wrap>.attryb-fbt-03-button>.price-tag {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.0255rem;
+    color: #344054;
+    margin: 0;
+}
+
+/* Style the custom checkbox container */
+.custom-checkbox {
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    right: 4px;
+}
+
+/* Style the custom checkbox itself */
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #FFF;
+    border: 1px solid #F2F4F7;
+    border-radius: 2px;
+}
+
+.custom-checkbox svg {
+    display: none;
+}
+
+/* Style the checkmark when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #1C1C1C;
+    border-radius: 2px;
+    border: 1px solid #475467;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark svg {
+    display: block;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark:after {
+    display: block;
+}
+
+.attryb-fbt-03-card-wrap>.attryb-fbt-03-button>button {
+    height: 44px;
+    background-color: #000;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.attryb-fbt-03-card-wrap>.attryb-fbt-03-button>button:hover {
+    background-color: #434141;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #attryb-fbt-03-section-wrap {
+        width: 768px;
+        padding: 20px 16px;
+    }
+
+    .attryb-fbt-03-container {
+        gap: 16px;
+    }
+
+    .attryb-fbt-03-container>.attryb-fbt-03-head-title>p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.875rem;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-card-holder {
+        width: 596px;
+        height: 252px;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-card-holder>.attryb-fbt-03-card-box {
+        width: 180px;
+        height: 100%;
+    }
+
+    .custom-checkbox {
+        right: 2px;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-button>.price-tag {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        letter-spacing: 0.0191rem;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-button>button {
+        height: 40px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #attryb-fbt-03-section-wrap {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .attryb-fbt-03-container {
+        gap: 12px;
+    }
+
+    .attryb-fbt-03-container>.attryb-fbt-03-head-title>p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .attryb-fbt-03-card-holder>.plus {
+        display: none;
+    }
+
+    .attryb-fbt-03-card-wrap {
+        flex-direction: column;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-card-holder {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-card-holder>.attryb-fbt-03-card-box {
+        width: 100%;
+        height: 108px;
+        padding: 8px;
+        display: flex;
+        gap: 12px;
+        background-color: #F9FAFB;
+    }
+
+    .attryb-fbt-03-card-box>.attryb-fbt-03-card-avatar-container {
+        width: 92px;
+        height: 92px;
+    }
+
+    .attryb-fbt-03-card-product-details>.attryb-fbt-03-card-product-title {
+        color: #005C44;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-button {
+        width: 100%;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-button>.price-tag {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.0223rem;
+    }
+
+    .attryb-fbt-03-card-wrap>.attryb-fbt-03-button>button {
+        height: 40px;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>saleOffer</title>
+</head>
+<body>
+    <div class="main">
+        <div class="saleLayout">
+            <div class="cancel">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="x-close">
+                        <path id="Icon" d="M18 6L6 18M6 6L18 18" stroke="#AABDC6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="saleBox-top">
+                <div class="saleTitle">
+                    <p class="end-sale">End of season sale</p>
+                    <p class="offer-persentage">Get 20% off site wide</p>
+                </div>
+                <p>Sale ends in:</p>
+            </div>
+            <div class="saleBox">   
+                <div class="timer">
+                    <div>
+                        <div class="timer-main">
+                            <div class="timer-box" id="day-box-1">0</div>
+                            <div class="timer-box" id="day-box-2">0</div>
+                        </div>
+                        <div class="timer-description">Days</div>
+                    </div>
+                    <div class="colan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#97AFB9"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#97AFB9"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="timer-main">
+                            <div class="timer-box" id="hour-box-1">0</div>
+                            <div class="timer-box" id="hour-box-2">0</div>
+                        </div>
+                        <div class="timer-description">Hours</div>
+                    </div>
+                    <div class="colan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#97AFB9"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#97AFB9"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="timer-main">
+                            <div class="timer-box" id="minute-box-1">0</div>
+                            <div class="timer-box" id="minute-box-2">0</div>
+                        </div>
+                        <div class="timer-description">Minutes</div>
+                    </div>
+                    <div class="colan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#97AFB9"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#97AFB9"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="timer-main">
+                            <div class="timer-box" id="sec-box-1">0</div>
+                            <div class="timer-box" id="sec-box-2">0</div>
+                        </div>
+                        <div class="timer-description">Seconds</div>
+                    </div>
+                </div>
+                <div class="coupon-box">
+                    <div class="coupon-title-code">
+                        <div class="coupon-des">
+                            Here is your coupon code
+                        </div>
+                        <div class="coupon-code">
+                            GET20
+                        </div>
+                    </div>
+                    <button class="copy-code-button">Copy Coupon Code</button>
+                </div>
+            </div>
+            <div class="sale-curve"></div>
+        </div>
+        <div class="overlap-box"></div>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>

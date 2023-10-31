@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    background-color: rgb(209, 198, 198);
+}
+
+.banner-box-1-wrapper {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE4DF;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box {
+    width: 476px;
+    height: 48px;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box>.valentine-text-1 {
+    /* border: 1px solid blue; */
+    width: 240px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box>.valentine-text-1>p {
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #ED6461;
+    font-weight: 500;
+    line-height: 2.25rem;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box>.banner-timer-1-box {
+    /* border: 1px solid black; */
+    width: 212px;
+    height: 48px;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box>.banner-timer-1-box>.timer-box {
+    /* border: 1px solid yellow; */
+    width: 44px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box>.banner-timer-1-box>.timer-box>.counter {
+    /* border: 1px solid yellow; */
+    width: 30px;
+    height: 32px;
+    font-family: inherit;
+    color: #ED6461;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: auto;
+    line-height: 2.25rem;
+}
+
+.banner-box-1-wrapper>.valetine-sale-box>.banner-timer-1-box>.timer-box>p {
+    /* border: 1px solid yellow; */
+    font-family: inherit;
+    color: #ED6461;
+    font-size: 0.625rem;
+    font-weight: 500;
+}
+
+.banner-handler {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    /* margin-left: auto; */
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+}
+
+.banner-handler>button {
+    border: none;
+    width: 112px;
+    height: 32px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1rem;
+    color: #FFF;
+    border-radius: 0.25rem;
+    background-color: #ED6461;
+    cursor: pointer;
+}
+
+.banner-handler>button:hover {
+    background-color: #E83531;
+}
+
+.banner-handler>svg {
+    cursor: pointer;
+}
+
+.banner-handler>svg:hover path {
+    stroke: #E83531;
+}
+
+/* ------------Toaster-------- */
+.toaster-container-1 {
+    width: 392px;
+    height: 96px;
+    display: flex;
+    border-radius: 8px;
+    gap: 0.5rem;
+    position: fixed;
+    top: 80%;
+    left: 5%;
+    background-color: rgb(209, 198, 198);
+    box-shadow: 1.5px 1.5px 20.004px 2.004px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.toaster_avatar {
+    width: 96px;
+    height: 96px;
+}
+
+.toaster_avatar>img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.toaster-description {
+    border-radius: 8px;
+    background-color: #F2F4F7;
+    flex: 2;
+    padding: 10px 16px;
+}
+
+.toaster-description>.description-recomend-txt {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #344054;
+}
+
+.toaster-description>.shopify_product_1 {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #099250;
+    margin-top: -5px;
+}
+
+.toaster-close-x {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    cursor: pointer;
+    display: none;
+}
+
+.toaster-container-1:hover .toaster-close-x {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner-box-1-wrapper {
+        justify-content: flex-start;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box {
+        width: 65%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 24px;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box>.valentine-text-1 {
+        width: 200px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .banner-box-1-wrapper {
+        height: 88px;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box>.valentine-text-1 {
+        width: 139px;
+        height: 20px;
+        justify-content: center;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box>.valentine-text-1>p {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.25rem;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box>.banner-timer-1-box {
+        height: 40px;
+        margin-top: -20px;
+    }
+
+    .banner-box-1-wrapper>.valetine-sale-box>.banner-timer-1-box>.timer-box>p {
+        font-size: 0.5rem;
+        font-weight: 500;
+        line-height: 0.75rem;
+    }
+
+    .banner-handler {
+        display: none;
+    }
+
+    /* Toaster */
+    .toaster-container-1 {
+        width: 320px;
+        height: 80px;
+    }
+
+    .toaster_avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .toaster-description>.description-recomend-txt {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+    }
+
+    .toaster-description>.shopify_product_1 {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
